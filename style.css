@@ -134,6 +134,22 @@ p {
     color: var(--primary-color);
 }
 
+.app-title,
+.app-text {
+    text-align: center;
+}
+
+.app-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hidden-img {
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+}
+
 
 
 @media (max-width:500px) {
@@ -171,6 +187,24 @@ p {
     }
 
     .hide-text {
+        display: none;
+    }
+
+    .app-title,
+    .app-text {
+        text-align: center;
+    }
+
+    .app-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .hidden-img {
         display: none;
     }
 }
